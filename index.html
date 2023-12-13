@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: comfortaa;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+  background-color: lavender;
+  text-align: center; 
+}
+
+label {
+  display: block; 
+  margin-bottom: 10px;
+}
+
+input[type=text], input[type=password], input[type=date] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 50px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=date]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 100px;
+}
+
+.registerbtn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 10;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Registeration Form</h1>
+    <hr>
+
+    <label for="email"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    
+    <label for="dob"><b>Date of Birth</b></label>
+    <input type="date" placeholder="Enter Date of Birth" name="dob" id="dob" required>
+    
+    <hr>
+    <p>By creating an account you agree to our <a href="https://omega365.com/concept/lifehack">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register with form</button>
+    
+    <p>or</p>
+    
+    <button type="submit" class="registerbtn">Register with Google</button>
+    
+    <button type="submit" class="registerbtn">Register with Github</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="https://omega365.com/concept/lifehack">Sign in</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
